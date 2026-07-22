@@ -80,7 +80,113 @@ const VOCAB = [
   { id:'novel', cat:'confusing', en:'novel', he:'חדשני / רומן', ex:'They proposed a novel solution.' },
   { id:'appreciate', cat:'confusing', en:'appreciate', he:'להעריך / להבין', ex:'I appreciate the difficulty of the task.' },
   { id:'barely', cat:'confusing', en:'barely', he:'בקושי', ex:'He could barely read the faded text.' },
-  { id:'rather', cat:'confusing', en:'rather', he:'למדי / במקום', ex:'It was rather cold. She walked rather than drove.' }
+  { id:'rather', cat:'confusing', en:'rather', he:'למדי / במקום', ex:'It was rather cold. She walked rather than drove.' },
+
+  // ---- 100 high-value additions ----
+  // connectors
+  { id:'hence', cat:'connectors', en:'hence', he:'לפיכך / מכאן', ex:'The data was incomplete; hence, the study was repeated.' },
+  { id:'accordingly', cat:'connectors', en:'accordingly', he:'בהתאם לכך', ex:'The rules changed, and the team acted accordingly.' },
+  { id:'albeit', cat:'connectors', en:'albeit', he:'הגם ש / אם כי', ex:'It was a useful, albeit expensive, solution.' },
+  { id:'instead', cat:'connectors', en:'instead', he:'במקום זאת', ex:'The meeting was cancelled; they met online instead.' },
+  { id:'besides', cat:'connectors', en:'besides', he:'חוץ מזה / מלבד', ex:'Besides math, she studies physics.' },
+  { id:'meanwhile', cat:'connectors', en:'meanwhile', he:'בינתיים', ex:'He cooked dinner; meanwhile, she set the table.' },
+  { id:'thereby', cat:'connectors', en:'thereby', he:'ובכך', ex:'They cut costs, thereby increasing profit.' },
+  { id:'regardless', cat:'connectors', en:'regardless', he:'ללא קשר / בכל מקרה', ex:'He continued regardless of the risks.' },
+  { id:'namely', cat:'connectors', en:'namely', he:'כלומר / דהיינו', ex:'One factor, namely cost, was ignored.' },
+  { id:'notably', cat:'connectors', en:'notably', he:'במיוחד / באופן בולט', ex:'Several cities, notably Tokyo, joined the plan.' },
+  // phrasal
+  { id:'bring_up', cat:'phrasal', en:'bring up', he:'להעלות (נושא) / לגדל', ex:'She brought up an important point.' },
+  { id:'carry_on', cat:'phrasal', en:'carry on', he:'להמשיך', ex:'They carried on working despite the noise.' },
+  { id:'put_forward', cat:'phrasal', en:'put forward', he:'להציע (רעיון/הצעה)', ex:'He put forward a new theory.' },
+  { id:'take_on', cat:'phrasal', en:'take on', he:'לקחת על עצמו', ex:'The company took on more workers.' },
+  { id:'break_down', cat:'phrasal', en:'break down', he:'להתפרק / לנתח לגורמים', ex:'Let us break down the problem into steps.' },
+  { id:'come_up_with', cat:'phrasal', en:'come up with', he:'להעלות רעיון / להמציא', ex:'She came up with a clever solution.' },
+  { id:'give_in', cat:'phrasal', en:'give in', he:'להיכנע', ex:'After a long debate, he gave in.' },
+  { id:'turn_out', cat:'phrasal', en:'turn out', he:'להתברר', ex:'The rumor turned out to be false.' },
+  { id:'rely_on', cat:'phrasal', en:'rely on', he:'להסתמך על', ex:'We rely on accurate data.' },
+  { id:'deal_with', cat:'phrasal', en:'deal with', he:'להתמודד עם / לטפל ב', ex:'The report deals with climate change.' },
+  { id:'result_in', cat:'phrasal', en:'result in', he:'לגרום ל / להוביל ל', ex:'The error resulted in a delay.' },
+  { id:'lead_to', cat:'phrasal', en:'lead to', he:'להוביל ל', ex:'Poor planning can lead to failure.' },
+  { id:'draw_on', cat:'phrasal', en:'draw on', he:'להסתמך על / לשאוב מ', ex:'The author draws on personal experience.' },
+  { id:'stem_from', cat:'phrasal', en:'stem from', he:'לנבוע מ', ex:'The problem stems from a lack of funding.' },
+  { id:'hold_back', cat:'phrasal', en:'hold back', he:'לעכב / לרסן', ex:'Fear held her back from trying.' },
+  // academic
+  { id:'acquire', cat:'academic', en:'acquire', he:'לרכוש / לקנות', ex:'Children acquire language quickly.' },
+  { id:'assess', cat:'academic', en:'assess', he:'להעריך / לאמוד', ex:'The exam assesses reading skills.' },
+  { id:'attribute', cat:'academic', en:'attribute', he:'לייחס', ex:'She attributed her success to hard work.' },
+  { id:'comprise', cat:'academic', en:'comprise', he:'לכלול / מורכב מ', ex:'The book comprises ten chapters.' },
+  { id:'constitute', cat:'academic', en:'constitute', he:'להוות', ex:'These changes constitute a major reform.' },
+  { id:'crucial', cat:'academic', en:'crucial', he:'מכריע / חיוני', ex:'Timing is crucial in this experiment.' },
+  { id:'demonstrate', cat:'academic', en:'demonstrate', he:'להדגים / להראות', ex:'The study demonstrates a clear trend.' },
+  { id:'diminish', cat:'academic', en:'diminish', he:'להפחית / לקטון', ex:'Interest in the topic gradually diminished.' },
+  { id:'distinct', cat:'academic', en:'distinct', he:'נבדל / ברור', ex:'There are three distinct groups.' },
+  { id:'emerge', cat:'academic', en:'emerge', he:'להופיע / לצוץ', ex:'New evidence has emerged.' },
+  { id:'emphasize', cat:'academic', en:'emphasize', he:'להדגיש', ex:'The report emphasizes the need for reform.' },
+  { id:'enhance', cat:'academic', en:'enhance', he:'לשפר / לשדרג', ex:'Sleep can enhance memory.' },
+  { id:'ensure', cat:'academic', en:'ensure', he:'להבטיח / לוודא', ex:'Please ensure the door is locked.' },
+  { id:'exceed', cat:'academic', en:'exceed', he:'לעלות על / לחרוג', ex:'Demand exceeded supply.' },
+  { id:'facilitate', cat:'academic', en:'facilitate', he:'להקל / לאפשר', ex:'Technology can facilitate learning.' },
+  { id:'fundamental', cat:'academic', en:'fundamental', he:'יסודי / בסיסי', ex:'There is a fundamental difference between them.' },
+  { id:'generate', cat:'academic', en:'generate', he:'לייצר / להפיק', ex:'Solar panels generate electricity.' },
+  { id:'hypothesis', cat:'academic', en:'hypothesis', he:'השערה', ex:'The experiment tested a simple hypothesis.' },
+  { id:'impose', cat:'academic', en:'impose', he:'לכפות / להטיל', ex:'The government imposed new taxes.' },
+  { id:'incentive', cat:'academic', en:'incentive', he:'תמריץ', ex:'Bonuses provide an incentive to work harder.' },
+  { id:'inherent', cat:'academic', en:'inherent', he:'טבוע / מובנה', ex:'There are inherent risks in any investment.' },
+  { id:'initiate', cat:'academic', en:'initiate', he:'ליזום / להתחיל', ex:'They initiated a new program.' },
+  { id:'integrate', cat:'academic', en:'integrate', he:'לשלב / לאחד', ex:'The system integrates several tools.' },
+  { id:'interpret', cat:'academic', en:'interpret', he:'לפרש', ex:'It is hard to interpret these results.' },
+  { id:'justify', cat:'academic', en:'justify', he:'להצדיק', ex:'The high costs are hard to justify.' },
+  { id:'maintain', cat:'academic', en:'maintain', he:'לשמר / לטעון', ex:'She maintains that the theory is correct.' },
+  { id:'modify', cat:'academic', en:'modify', he:'לשנות / להתאים', ex:'They modified the design slightly.' },
+  { id:'notion', cat:'academic', en:'notion', he:'מושג / רעיון', ex:'He rejected the notion entirely.' },
+  { id:'obtain', cat:'academic', en:'obtain', he:'להשיג', ex:'Researchers obtained similar results.' },
+  { id:'persist', cat:'academic', en:'persist', he:'להתמיד / להימשך', ex:'The symptoms persisted for weeks.' },
+  { id:'phenomenon', cat:'academic', en:'phenomenon', he:'תופעה', ex:'This is a common natural phenomenon.' },
+  { id:'prominent', cat:'academic', en:'prominent', he:'בולט / מוביל', ex:'She is a prominent scientist.' },
+  { id:'pursue', cat:'academic', en:'pursue', he:'לרדוף אחר / לחתור ל', ex:'He decided to pursue a career in law.' },
+  { id:'reinforce', cat:'academic', en:'reinforce', he:'לחזק / לתגבר', ex:'The findings reinforce earlier studies.' },
+  { id:'reveal', cat:'academic', en:'reveal', he:'לחשוף / לגלות', ex:'The study revealed a surprising result.' },
+  { id:'subsequent', cat:'academic', en:'subsequent', he:'עוקב / מאוחר יותר', ex:'The error affected all subsequent steps.' },
+  { id:'substantial', cat:'academic', en:'substantial', he:'ניכר / משמעותי', ex:'There was a substantial increase in sales.' },
+  { id:'tendency', cat:'academic', en:'tendency', he:'נטייה', ex:'He has a tendency to exaggerate.' },
+  { id:'utilize', cat:'academic', en:'utilize', he:'לנצל / לעשות שימוש', ex:'The plant utilizes solar energy.' },
+  { id:'vary', cat:'academic', en:'vary', he:'להשתנות / לגוון', ex:'Prices vary from store to store.' },
+  { id:'vital', cat:'academic', en:'vital', he:'חיוני', ex:'Water is vital for life.' },
+  { id:'widespread', cat:'academic', en:'widespread', he:'נפוץ / רחב היקף', ex:'The belief is widespread.' },
+  { id:'anticipate', cat:'academic', en:'anticipate', he:'לצפות / לחזות מראש', ex:'We did not anticipate such demand.' },
+  { id:'compensate', cat:'academic', en:'compensate', he:'לפצות', ex:'Nothing can compensate for the loss.' },
+  { id:'component', cat:'academic', en:'component', he:'רכיב', ex:'Each component was tested separately.' },
+  { id:'comprehensive', cat:'academic', en:'comprehensive', he:'מקיף', ex:'The book gives a comprehensive overview.' },
+  { id:'controversial', cat:'academic', en:'controversial', he:'שנוי במחלוקת', ex:'The decision was highly controversial.' },
+  { id:'deliberate', cat:'academic', en:'deliberate', he:'מכוון / מחושב', ex:'It was a deliberate attempt to mislead.' },
+  { id:'discern', cat:'academic', en:'discern', he:'להבחין', ex:'It was hard to discern the difference.' },
+  { id:'eliminate', cat:'academic', en:'eliminate', he:'לחסל / להעלים', ex:'The new method eliminates errors.' },
+  { id:'encompass', cat:'academic', en:'encompass', he:'להקיף / לכלול', ex:'The course encompasses many topics.' },
+  { id:'exploit', cat:'academic', en:'exploit', he:'לנצל', ex:'They exploited a weakness in the system.' },
+  { id:'feasible', cat:'academic', en:'feasible', he:'בר-ביצוע / ישים', ex:'The plan is technically feasible.' },
+  { id:'coherent', cat:'academic', en:'coherent', he:'הגיוני ומלוכד', ex:'She gave a clear, coherent argument.' },
+  { id:'ambiguous', cat:'academic', en:'ambiguous', he:'דו-משמעי / עמום', ex:'The instructions were ambiguous.' },
+  { id:'explicit', cat:'academic', en:'explicit', he:'מפורש', ex:'He gave explicit instructions.' },
+  { id:'implicit', cat:'academic', en:'implicit', he:'מרומז / משתמע', ex:'There was an implicit assumption in the plan.' },
+  { id:'prevalent', cat:'academic', en:'prevalent', he:'נפוץ / שכיח', ex:'The disease is prevalent in warm regions.' },
+  { id:'diverse', cat:'academic', en:'diverse', he:'מגוון', ex:'The city has a diverse population.' },
+  { id:'resemble', cat:'academic', en:'resemble', he:'לדמות / דומה ל', ex:'The copy closely resembles the original.' },
+  // confusing / tricky
+  { id:'contrary', cat:'confusing', en:'contrary', he:'מנוגד / להיפך', ex:'Contrary to expectations, sales rose.' },
+  { id:'former', cat:'confusing', en:'former', he:'הראשון (מבין שניים) / לשעבר', ex:'Of tea and coffee, I prefer the former.' },
+  { id:'latter', cat:'confusing', en:'latter', he:'האחרון (מבין שניים)', ex:'She chose the latter option.' },
+  { id:'hardly', cat:'confusing', en:'hardly', he:'בקושי / כמעט לא', ex:'He had hardly any money left.' },
+  { id:'seldom', cat:'confusing', en:'seldom', he:'לעיתים רחוקות', ex:'She seldom makes mistakes.' },
+  { id:'thorough', cat:'confusing', en:'thorough', he:'יסודי / מעמיק', ex:'They did a thorough investigation.' },
+  { id:'subtle', cat:'confusing', en:'subtle', he:'עדין / דק / מעודן', ex:'There is a subtle difference between the two.' },
+  { id:'apparent', cat:'confusing', en:'apparent', he:'נראה לכאורה / ברור', ex:'For no apparent reason, the system failed.' },
+  { id:'eventually', cat:'confusing', en:'eventually', he:'בסופו של דבר (לא: אולי)', ex:'After many attempts, they eventually succeeded.' },
+  { id:'sensible', cat:'confusing', en:'sensible', he:'הגיוני / נבון', ex:'That is a sensible decision.' },
+  { id:'sensitive', cat:'confusing', en:'sensitive', he:'רגיש', ex:'This is a sensitive topic.' },
+  { id:'literally', cat:'confusing', en:'literally', he:'מילולית / פשוטו כמשמעו', ex:'The word was translated literally.' },
+  { id:'considerable', cat:'confusing', en:'considerable', he:'ניכר / רב', ex:'They spent a considerable amount of time on it.' },
+  { id:'respectively', cat:'confusing', en:'respectively', he:'בהתאמה', ex:'Tom and Sam scored 90 and 85 respectively.' },
+  { id:'yield', cat:'confusing', en:'yield', he:'להניב / להיכנע / תשואה', ex:'The experiment yielded useful data.' }
 ];
 
 const VOCAB_CATS = [
@@ -538,6 +644,57 @@ const CHECKLIST = [
   { id:'c9', text:'בדקתי לוגיסטיקה (מיקום/טכניקה לאמירנט, זהות, שעה)' }
 ];
 
+// ---- Per-type "how to approach" guides (shown atop each practice tab) ----
+const STRATEGY = {
+  sc: { label:'השלמת משפטים', html:`
+    <h4>איך ניגשים</h4>
+    <ol>
+      <li>קראו את <b>כל</b> המשפט עד הסוף — <b>לפני</b> שמסתכלים על התשובות.</li>
+      <li><b>נחשו בעצמכם</b> איזו מילה מתאימה (או לפחות אם היא חיובית או שלילית).</li>
+      <li>חפשו רמזים: <b>מילות קישור</b> (although / because / however) ו<b>פיסוק</b> — הם מסגירים אם צריך מילה <b>תואמת</b> או <b>מנוגדת</b>.</li>
+      <li>הציבו כל מסיח במשפט ובדקו הגיון ודקדוק.</li>
+    </ol>
+    <h4>🔑 אם לא יודעים את המילה</h4>
+    <ul>
+      <li><b>פרקו אותה:</b> קידומת (<code>un-/in-/im-</code>=שלילה, <code>re-</code>=שוב) וסיומת מסגירות משמעות וחלק דיבר.</li>
+      <li><b>חפשו דמיון:</b> לעברית (popular ↔ פופולרי) או למילה אנגלית מוכרת (findings ↔ find).</li>
+      <li><b>חיובי או שלילי?</b> קבעו לפי טון המשפט איזו מילה דרושה — ופסלו את מי שלא מתאים.</li>
+      <li><b>פסלו ונחשו:</b> אין קנס על טעות — כל מסיח שנפסל מכפיל את הסיכוי.</li>
+    </ul>` },
+  rs: { label:'ניסוח מחדש', html:`
+    <h4>איך ניגשים</h4>
+    <ol>
+      <li>פענחו את <b>שלד המשפט</b>: מי הנושא, מה הפעולה, ומה <b>היחס הלוגי</b> (סיבה / ניגוד / תנאי / זמן).</li>
+      <li>זהו את <b>מילת הקישור</b> במקור — הניסוח הנכון ישמר את אותו יחס במילים אחרות.</li>
+      <li>בחרו את המסיח שאומר <b>אותו דבר בדיוק</b> — לא פחות ולא יותר.</li>
+    </ol>
+    <h4>🚩 פסלו מיד מסיח ש...</h4>
+    <ul>
+      <li><b>מוסיף מידע</b> שלא היה במקור · <b>הופך סיבתיות</b> · <b>משנה משמעות</b> (postponed ≠ cancelled) · <b>מקצין</b> (some→all) · <b>הופך חיוב/שלילה</b>.</li>
+    </ul>
+    <h4>🔑 אם לא יודעים מילה</h4>
+    <ul>
+      <li>התמקדו ב<b>יחס הלוגי</b> ובמילות הקישור, לא במילה הבודדת — לרוב זה מספיק לזהות את התשובה.</li>
+      <li>היזהרו ממסיח שמשתמש <b>באותן מילים</b> של המקור — זה פיתוי. חפשו רעיון זהה, לא מילים דומות.</li>
+    </ul>` },
+  rc: { label:'הבנת הנקרא', html:`
+    <h4>איך ניגשים</h4>
+    <ol>
+      <li><b>Skim</b> תחילה: קראו את המשפט הראשון של כל פסקה + פתיחה וסיום — לתפוס רעיון מרכזי ומבנה.</li>
+      <li>עברו לשאלות, זהו את <b>סוג</b> השאלה ומילת המפתח, ואז <b>Scan</b> למקום המדויק (השאלות לפי סדר הופעת המידע).</li>
+      <li>ענו <b>לפי הכתוב בלבד</b> — לא לפי ידע כללי או דעה.</li>
+    </ol>
+    <h4>⚠️ דגשים ומלכודות</h4>
+    <ul>
+      <li>תשובה קיצונית (<code>always / never / only</code>) לרוב שגויה · "נכון אבל לא רלוונטי" · "לא הוזכר בטקסט" · אל תסמכו על הזיכרון — חזרו לטקסט ואמתו.</li>
+    </ul>
+    <h4>🔑 אם לא יודעים מילה</h4>
+    <ul>
+      <li><b>הבינו מההקשר:</b> המשפטים סביב המילה חושפים את משמעותה — לרוב אין צורך במילה עצמה כדי לענות.</li>
+      <li>בשאלת <b>"מילה בהקשר"</b>: החליפו את המילה בכל מסיח ובדקו איזה שומר על משמעות המשפט.</li>
+    </ul>` }
+};
+
 /* =======================================================================
    2) STATE — persistence
    ======================================================================= */
@@ -586,6 +743,7 @@ const ui = {
   vocabFlipped: false,
   vocabReviewOnly: false,
   practiceType: 'sc',
+  stratOpen: true,
   pIndex: { sc:0, rs:0, rc:0 },
   sim: null // {questions, answers, idx, remaining, timerId, finished}
 };
@@ -885,12 +1043,20 @@ RENDER.practice = function () {
   if (ui.practiceType === 'rc') body = renderRCPractice();
   else body = renderSCRSPractice(ui.practiceType);
 
+  const strat = STRATEGY[ui.practiceType];
+  const stratBox = `<details class="accordion strat" ${ui.stratOpen ? 'open' : ''}>
+      <summary data-action="strat-toggle"><span class="mod-icon">💡</span> איך לגשת · ${strat.label}<span class="chev">▾</span></summary>
+      <div class="content">${strat.html}</div>
+    </details>`;
+
   return `
   <div class="page-head"><span class="eyebrow">תרגול</span>
     <h1>בנק שאלות עם משוב מיידי</h1>
     <p>כל טעות נכנסת אוטומטית ליומן הטעויות. קראו את ההסבר — שם נמצאת הלמידה האמיתית.</p>
   </div>
-  <div class="subtabs">${tabs}</div>${body}`;
+  <div class="subtabs">${tabs}</div>
+  ${stratBox}
+  ${body}`;
 };
 
 function renderSCRSPractice(type) {
@@ -1251,6 +1417,7 @@ document.addEventListener('click', function (e) {
     case 'vocab-review-mark': vocabMark(false); break;
 
     case 'practice-tab': ui.practiceType = t.dataset.type; render(); break;
+    case 'strat-toggle': e.preventDefault(); ui.stratOpen = !ui.stratOpen; render(); break;
     case 'answer': answerQuestion(t.dataset.type, t.dataset.qid, +t.dataset.choice); break;
     case 'practice-next': practiceMove(t.dataset.type, 1); break;
     case 'practice-prev': practiceMove(t.dataset.type, -1); break;

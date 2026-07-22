@@ -264,6 +264,14 @@ html[data-theme="dark"] .accordion .content h4 { color: #bcb9ff; }
 .worked { background: var(--surface-2); border: 1px dashed var(--border-strong); border-radius: 12px; padding: 14px 16px; margin: 14px 0; }
 .worked .q { font-weight: 700; }
 .worked .opt { margin: 3px 0; }
+
+/* practice "how to approach" guide */
+.accordion.strat { border-color: color-mix(in srgb, var(--accent) 38%, var(--border)); background: color-mix(in srgb, var(--accent) 5%, var(--surface)); margin-bottom: 16px; }
+.accordion.strat > summary { color: var(--primary-600); }
+html[data-theme="dark"] .accordion.strat > summary { color: #cfd2ff; }
+.accordion.strat .content ol, .accordion.strat .content ul { margin: 8px 0; padding-inline-start: 20px; }
+.accordion.strat .content li { margin: 5px 0; }
+.accordion.strat .content h4:first-child { margin-top: 8px; }
 kbd, code { background: var(--surface-3); padding: 1px 6px; border-radius: 6px; font-size: .92em; }
 mark { background: color-mix(in srgb, var(--gold) 35%, transparent); color: inherit; padding: 0 3px; border-radius: 4px; }
 
