@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>לומדת אמיר"ם / אמירנט — הכנה מלאה למבחן</title>
+  <meta name="description" content="לומדה אינטראקטיבית להכנה למבחן אמירם/אמירנט: תוכנית 4 ימים, אוצר מילים, תרגול, סימולציות ומעקב התקדמות." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <button class="nav-toggle" data-action="menu-toggle" aria-label="תפריט">☰</button>
+    <div class="brand">
+      <span class="brand-mark">אמ״ם</span>
+      <div class="brand-text">
+        <strong>לומדת אמיר"ם / אמירנט</strong>
+        <span class="brand-sub">הכנה מלאה למבחן · יעד: פטור 134+</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" data-action="theme-toggle" title="מצב כהה/בהיר" aria-label="החלף ערכת צבעים">🌙</button>
+      <div class="menu-wrap">
+        <button class="icon-btn" data-action="tools-toggle" title="כלים" aria-label="כלים">⚙︎</button>
+        <div class="menu" id="toolsMenu" hidden>
+          <button data-action="export">⬇︎ ייצוא התקדמות (גיבוי)</button>
+          <button data-action="import">⬆︎ ייבוא התקדמות</button>
+          <button data-action="reset" class="danger">🗑 איפוס כל ההתקדמות</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar">
+      <button class="nav-item" data-action="nav" data-section="dashboard"><span class="ico">📊</span> לוח בקרה</button>
+      <button class="nav-item" data-action="nav" data-section="plan"><span class="ico">🗓️</span> תוכנית 4 ימים</button>
+      <button class="nav-item" data-action="nav" data-section="theory"><span class="ico">📚</span> לומדה (תיאוריה)</button>
+      <button class="nav-item" data-action="nav" data-section="vocab"><span class="ico">🗂️</span> אוצר מילים</button>
+      <button class="nav-item" data-action="nav" data-section="practice"><span class="ico">✍️</span> תרגול</button>
+      <button class="nav-item" data-action="nav" data-section="sim"><span class="ico">⏱️</span> סימולציה</button>
+      <button class="nav-item" data-action="nav" data-section="errors"><span class="ico">📓</span> יומן טעויות</button>
+      <button class="nav-item" data-action="nav" data-section="examday"><span class="ico">🎯</span> יום המבחן</button>
+      <div class="sidebar-foot">
+        <div class="mini-progress">
+          <span>התקדמות כללית</span>
+          <div class="bar"><i id="sideProgBar"></i></div>
+          <b id="sideProgPct">0%</b>
+        </div>
+      </div>
+    </nav>
+    <div class="scrim" data-action="menu-toggle" hidden></div>
+
+    <main id="view" class="view"><!-- rendered by app.js --></main>
+  </div>
+
+  <input type="file" id="importFile" accept="application/json" hidden />
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
